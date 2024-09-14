@@ -30,4 +30,11 @@ func main() {
 	str := string(txt2)
 	fmt.Println(str)
 	
+	e := '🌍'
+	fmt.Printf("unicode %d to binary is %b\n", e, e)
+
+	eToBinary := fmt.Sprintf("%b", e)
+	fmt.Println(eToBinary)
+
+	
 }
