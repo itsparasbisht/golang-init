@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -30,11 +31,19 @@ func main() {
 	str := string(txt2)
 	fmt.Println(str)
 	
-	e := '🌍'
+	e := 'Ģ'
 	fmt.Printf("unicode %d to binary is %b\n", e, e)
 
 	eToBinary := fmt.Sprintf("%b", e)
 	fmt.Println(eToBinary)
+
+	r1 := rune(127757)
+	r2 := string(r1)
+	fmt.Println(r2)
+
+	b := "11111010"
+	num, _ := strconv.ParseInt(b, 2, 64)
+	fmt.Println(num)
 
 	
 }
